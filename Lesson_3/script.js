@@ -259,7 +259,12 @@ const fruits = ['🍎', '🍇', '🍑', '🍌', '🍋'];
 // Example 7 - Сортування масиву із циклом
 // Напиши скрипт сортування масиву рядків в алфавітному порядку за першою літерою елемента.
 
-// const langs = ['cpython', 'bjavascript', 'ac++', 'haskel', 'php', 'ruby'];
+const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
+// langs.sort((a,b) => a.localeCompare(b));
+// ['c++', 'haskel', 'javascript', 'php', 'python', 'ruby']
+// console.log(langs);
+
+// нажаль наш варіант був не вірний 😥😥😥
 
 // for (let i = 0; i < langs.length; i += 1) {
 //     if (langs[0] > langs[i]) {
@@ -268,6 +273,29 @@ const fruits = ['🍎', '🍇', '🍑', '🍌', '🍋'];
 //     }
 // }
 // console.log(langs);
+
+
+// Вірні варіанти
+// 1 метод бульбашка 
+// https://www.youtube.com/watch?v=-_0dD2shabQ
+// http://xn--80adth0aefm3i.xn--j1amh/%D0%BF%D1%83%D0%B1%D0%BB%D1%96%D0%BA%D0%B0%D1%86%D1%96%D1%8F/21
+// for (let i = 0; i < langs.length; i++) {
+//     for (let j = 0; j < langs.length; j++) {
+//         if (langs[j] > langs[j + 1]) {
+//             const item = langs[j];
+//             langs[j] = langs[j + 1];
+//             langs[j + 1] = item;
+//         }
+//     }
+// }
+// console.log(langs);
+
+
+// Сучасний варіант
+// console.log(['c++', 'haskel', 'javascript', 'php', 'python', 'ruby']);
+// langs.sort((a,b) => a.localeCompare(b))
+// console.log(langs);
+
 
 
 
