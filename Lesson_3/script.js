@@ -292,7 +292,6 @@ const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
 
 
 // Сучасний варіант
-// console.log(['c++', 'haskel', 'javascript', 'php', 'python', 'ruby']);
 // langs.sort((a,b) => a.localeCompare(b))
 // console.log(langs);
 
